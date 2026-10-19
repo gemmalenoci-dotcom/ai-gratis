@@ -237,6 +237,30 @@ footer a:hover{border-bottom-color:var(--fucsia)}
 @media(max-width:640px){.hd .dx{gap:10px}.hd .dx .back{display:none}.hd .login{padding:6px 13px;font-size:13.5px}}
 @media(max-width:480px){.hd .dx .acc{display:none}}
 @media(max-width:480px){.hd .dx .acc{display:none}}
+
+/* Kit di riconoscimento della risorsa (19/10/2026) */
+:root{--fucsia:#B8570A}
+.hero{background:url(assets/texture/grana-leggera.jpg) center/cover,repeating-linear-gradient(transparent,transparent 31px,rgba(59,54,56,.09) 31px,rgba(59,54,56,.09) 32px),linear-gradient(165deg,#FDF0E2 0%,#F8F7F3 58%,#FBE9D6 100%);background-blend-mode:multiply,normal,normal}
+
+.rigatop{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.timbro{font-family:'Gochi Hand',cursive;font-size:1.3rem;line-height:1;color:var(--fucsia);rotate:-4deg;border:2.5px solid var(--fucsia);border-radius:10px;padding:4px 12px 2px;white-space:nowrap;display:inline-block}
+.kit{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:22px}
+.kit .cap{font-family:'Gochi Hand',cursive;font-size:1.2rem;line-height:1.1;color:var(--fucsia);rotate:-2deg;margin-left:6px}
+.kt{position:relative;width:54px;height:54px;border-radius:15px;background:#fff;border:2px solid var(--fucsia);box-shadow:3px 4px 0 var(--fucsia);display:flex;align-items:center;justify-content:center;color:var(--fucsia);flex:none}
+.kt.grande{width:68px;height:68px;border-radius:18px}
+.kt img{width:30px;height:30px;object-fit:contain;display:block}
+.kt.grande img{width:38px;height:38px}
+.kt svg.ic{width:28px;height:28px}
+.kt.grande svg.ic{width:36px;height:36px}
+.kt.scuro{background:#2B2628;border-color:#2B2628}
+.kt.barrato{box-shadow:none;border-color:var(--line,#E4E0D9)}
+.kt.barrato img,.kt.barrato svg.ic{filter:grayscale(1);opacity:.45}
+.kt svg.x{position:absolute;left:6px;top:6px;width:calc(100% - 12px);height:calc(100% - 12px);color:var(--fucsia)}
+.voto87{display:inline-flex;align-items:baseline;gap:2px;border:3px solid var(--fucsia);border-radius:100px;padding:6px 18px;background:#fff;color:var(--fucsia);font-weight:700}
+.voto87 b{font-size:2rem;letter-spacing:-.05em;font-weight:900;color:var(--fucsia)}
+.logo-in{width:20px;height:20px;vertical-align:-4px;margin-right:6px;object-fit:contain;display:inline-block}
+.marchi{font-size:12.5px;color:var(--gray,#665E61);max-width:46em;margin:10px auto 0;line-height:1.45}
+@media(max-width:640px){.kt{width:48px;height:48px}.kt.grande{width:60px;height:60px}.kit{gap:8px}}
 </style>
 </head>
 <body>
@@ -252,10 +276,21 @@ footer a:hover{border-bottom-color:var(--fucsia)}
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Gratis · per chi ha scritto CLAUDE</span>
+      <div class="rigatop"><span class="eyebrow">Gratis · per chi ha scritto CLAUDE</span><span class="timbro">CLAUDE</span></div>
       <h1>Claude per i tuoi social, con la <mark>tua testa</mark> dentro</h1>
       <p class="sub">Claude lo può aprire chiunque, la differenza la fa quello che gli dai. Qui trovi da dove partire, 5 prompt che lavorano sulla <b>tua</b> strategia e le 3 cose che all'AI non lasci mai</p>
-      <div class="btns">
+      <!-- kit --><div class="kit"><span class="kt grande"><img src="assets/loghi/claude.svg" alt="Claude" width="30" height="30"></span><span class="kt"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+</svg></span><span class="kt"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+  <path d="M20 3v4" />
+  <path d="M22 5h-4" />
+  <path d="M4 17v2" />
+  <path d="M5 18H3" />
+</svg></span><span class="kt"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M12 20h9" />
+  <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z" />
+</svg></span></div><div class="btns">
         <a class="btn" href="#parti">Parti da qui <span class="ar">&darr;</span></a>
         <a class="btn btn-linea" href="#prompt">Vai ai prompt</a>
       </div>
@@ -263,7 +298,7 @@ footer a:hover{border-bottom-color:var(--fucsia)}
     <div class="visual">
       <figure class="polaroid"><img src="assets/img/gemma-polaroid.jpg" alt="Gemma Lenoci" width="390" height="520"><span>Gemma</span></figure>
       <div class="frame" aria-hidden="true">
-        <div class="bar"><i></i><i></i><i></i><span>claude.ai</span></div>
+        <div class="bar"><i></i><i></i><i></i><span><img class="logo-in" src="assets/loghi/claude.svg" alt="" width="20" height="20">claude.ai</span></div>
         <div class="chat">
           <span class="lbl">Come lo usano quasi tutti</span>
           <div class="msg tu">Scrivimi un post che spacca sul mio lavoro</div>
@@ -499,7 +534,7 @@ Non aggiungere dettagli, storie o numeri che non ti ho dato. Alla fine elencami 
 <footer>
   <div class="wrap">
     <p>Una risorsa di <a href="https://entra.unlikeacademy.it/?utm_source=aigratis&amp;utm_medium=footer&amp;utm_campaign=claude">Unlike Academy</a> · usa l'AI senza sembrare AI</p>
-    <p>© 2026 Unlike</p>
+    <p class="marchi">Claude è un marchio di Anthropic, mostrato solo per indicare lo strumento: nessuna approvazione o partnership</p><p>© 2026 Unlike</p>
   </div>
 </footer>
 
