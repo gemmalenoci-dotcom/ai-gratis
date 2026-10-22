@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Come ottimizzare i crediti di Claude · Unlike</title>
+<meta name="description" content="Nessun trucco per averlo senza limiti, ma quasi tutto quello che consuma i crediti si può evitare. Otto regole e due prompt per far durare Claude">
+<link rel="icon" href="assets/logo/favicon.png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/open-sauce-sans-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/stile.css?v=1">
+</head>
+<body>
+
+<a class="strip" href="#stratego"><b>Novità</b> · Stratego esce a novembre · <u>Mettiti in lista</u></a>
+<header class="wrap hd">
+  <a href="index.html"><img src="assets/logo/logo.webp" alt="Unlike Academy" width="768" height="158"></a>
+  <div class="dx"><a class="back" href="index.html">&larr; Tutte le risorse</a><a class="login" href="https://club.unlikeacademy.it/sign_in" target="_blank" rel="noopener">Login</a></div>
+</header>
+
+<main>
+<section class="hero"><div class="wrap">
+<span class="kicker">Risorsa gratuita · Guida + 2 prompt · 8 min</span>
+<h1>Come ottimizzare <em>i crediti di Claude</em></h1>
+<p class="lead">Nessun trucco per averlo senza limiti, ma quasi tutto quello che consuma i crediti si può evitare. Le regole sono poche, e la prima non costa niente</p>
+</div></section>
+
+<section><div class="wrap">
+<span class="eyebrow">Prima di tutto</span>
+<h2>Cosa consuma davvero</h2>
+<p class="sub">Ogni volta che scrivi, Claude ha davanti tutta la chat. Per questo la risposta numero 40 pesa molto più della numero 2, anche se la tua domanda è corta. Dalla guida ufficiale di Anthropic, queste sono le cose che contano</p>
+<div class="parts">
+<div class="part"><div class="no">1</div><h3>La lunghezza della chat</h3><p>Più va avanti, più ogni risposta costa</p></div>
+<div class="part"><div class="no">2</div><h3>I file che alleghi</h3><p>Un documento enorme rimandato dieci volte pesa dieci volte</p></div>
+<div class="part"><div class="no">3</div><h3>Modello e sforzo</h3><p>Il modello più potente e il ragionamento più lungo consumano di più</p></div>
+<div class="part"><div class="no">4</div><h3>Gli strumenti</h3><p>Ricerca web e Research sono comodi, ma non gratis</p></div>
+<div class="part"><div class="no">5</div><h3>Artifact e file creati</h3><p>PDF, documenti e pagine che Claude costruisce per te</p></div>
+<div class="part"><div class="no">6</div><h3>I lavori a più passaggi</h3><p>Quando Claude esegue, cerca, naviga e rifà da solo</p></div>
+</div>
+<div class="note"><b>Due contatori, e li vedi tu:</b> una sessione da 5 ore e un limite della settimana. Li trovi in Impostazioni → Usage (claude.ai/settings/usage)</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<span class="eyebrow">Le regole</span>
+<h2>Otto abitudini che cambiano la settimana</h2>
+<ol class="steps">
+<li><span><b>Una chat, un compito.</b> Nuovo argomento, nuova chat: quella vecchia si porta dietro tutto quello che c'è dentro</span></li>
+<li><span><b>Quello che riusi va in un progetto.</b> La scheda su di te, il tono, l'offerta: nelle istruzioni del progetto, non da incollare ogni volta. I contenuti dei progetti pesano meno quando li riusi, ma se torni dopo molto tempo il primo messaggio li conta per intero</span></li>
+<li><span><b>Un messaggio completo vale più di cinque corti.</b> Contesto, obiettivo e paletti subito, e tutte le domande insieme</span></li>
+<li><span><b>Il modello giusto per il lavoro.</b> Se il tuo piano ne offre più d'uno: il più leggero per i lavori meccanici (liste, titoli, smistare), quello medio per quasi tutto (testi, script, mail), il più potente solo per la strategia o per i problemi bloccati</span></li>
+<li><span><b>Sforzo basso per le cose semplici.</b> Ragionare a lungo serve per decidere, non per riformulare una frase</span></li>
+<li><span><b>Gli strumenti pesanti solo quando servono.</b> Ricerca web e Research quando ti serve un dato vero, non per abitudine</span></li>
+<li><span><b>Prima il testo, poi il file.</b> Fatti mostrare il contenuto in chat, correggilo lì, e solo dopo chiedi il PDF, l'immagine o l'artifact. Correggere sul file finito costa il doppio</span></li>
+<li><span><b>Quando la chat si allunga, riparti.</b> Fatti scrivere un riassunto e incollalo in una chat nuova: il prompt è qui sotto</span></li>
+</ol>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<span class="eyebrow">Prompt 1 · una volta sola</span>
+<h2>La tua regola anti-spreco</h2>
+<p class="sub">Claude ti fa quattro domande e scrive una regola breve su misura. La incolli nelle istruzioni del tuo progetto, oppure nelle preferenze del profilo se vuoi che valga ovunque</p>
+<details class="prompt"><summary>Scrivi la mia regola anti-spreco<span class="chev"></span></summary>
+<div class="pact"><button class="copy-btn" data-target="p-regola" type="button">Copia il prompt</button></div>
+<pre id="p-regola">Voglio una regola breve da incollare nelle istruzioni del mio progetto, per consumare meno crediti senza peggiorare i risultati
+
+Fammi 4 domande, una alla volta:
+1. che uso fai di Claude in una settimana normale (scrivere, analizzare, creare file o PDF, cercare sul web)
+2. quali lavori ripeti più spesso
+3. l'ultima volta che ti è finito il limite, cosa stavi facendo
+4. che piano e che modelli hai a disposizione
+
+Poi scrivi la regola, in massimo 8 righe, rivolta a te, usando solo i punti che servono al mio caso:
+· a inizio compito dirmi in una riga se basta un modello più leggero o uno sforzo più basso, così lo cambio io
+· prima di creare file, PDF, immagini o artifact, mostrarmi il contenuto in chat e aspettare il mio ok
+· chiedermi tutto quello che manca in un solo messaggio
+· se devo cambiare una riga, darmi solo quella riga
+· se la chat è lunga, avvisarmi e preparare il riassunto per ripartire
+· risposte brevi, senza premesse
+
+Ricorda che la regola pesa a ogni messaggio: se può stare in 6 righe, non farla di 12</pre>
+</details>
+<p class="sub" style="margin-top:26px"><b>Non hai voglia di rispondere alle domande?</b> Questa è la regola già pronta: incollala così com'è</p>
+<details class="prompt"><summary>La regola già pronta<span class="chev"></span></summary>
+<div class="pact"><button class="copy-btn" data-target="p-pronta" type="button">Copia la regola</button></div>
+<pre id="p-pronta">REGOLA CREDITI
+Prima di iniziare un compito: dimmi in una riga se basta un modello più leggero o uno sforzo più basso, così lo cambio io
+Prima di creare file, PDF, immagini o artifact: fammi vedere il contenuto in chat e aspetta il mio ok
+Se ti manca qualcosa: chiedimi tutto in un solo messaggio
+Se devo cambiare una riga: dammi solo quella riga, non tutto il testo
+Se la chat è diventata lunga: avvisami e preparami il riassunto per ripartire in una chat nuova
+Risposte brevi: niente premesse, niente riassunto finale se non lo chiedo</pre>
+</details>
+<div class="note"><b>Claude non può cambiare modello da solo:</b> ti dice quale conviene e lo scegli tu dal selettore. E tieni la regola corta, perché anche lei pesa a ogni messaggio</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<span class="eyebrow">Prompt 2 · quando la chat è lunga</span>
+<h2>Il riassunto per ripartire</h2>
+<p class="sub">Invece di trascinarti dietro 80 messaggi, chiedi a Claude di condensarli e riparti pulita in una chat nuova</p>
+<details class="prompt"><summary>Riassumi e fammi ripartire<span class="chev"></span></summary>
+<div class="pact"><button class="copy-btn" data-target="p-riassunto" type="button">Copia il prompt</button></div>
+<pre id="p-riassunto">Questa chat è diventata lunga e voglio ripartire in una nuova senza perdere il filo
+
+Scrivi un riassunto di massimo 200 parole con:
+· l'obiettivo
+· cosa abbiamo deciso
+· cosa è già fatto
+· cosa resta da fare
+· le mie preferenze emerse (tono, formato, cose da evitare)
+
+Poi scrivi la prima frase da incollare nella chat nuova per riprendere da dove siamo</pre>
+</details>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<span class="eyebrow">Se lavori con Cowork o Claude Code</span>
+<h2>Qui il consumo si accumula più in fretta</h2>
+<p class="sub">Le sessioni di lavoro partono già con istruzioni, memoria e strumenti caricati: quel peso lo paghi a ogni messaggio</p>
+<ul class="check">
+<li><span class="ck">✓</span>Una conversazione, un compito, sessioni corte</li>
+<li><span class="ck">✓</span>In Claude Code, tra un compito e l'altro: /clear per ripartire pulita e /model per scendere a un modello più leggero</li>
+<li><span class="ck">✓</span>Niente agenti o flussi con più agenti se non servono: ognuno lavora per conto suo e consuma per conto suo</li>
+<li><span class="ck">✓</span>Le attività programmate girano anche quando non guardi: controlla ogni quanto partono, con quale modello e quanto leggono</li>
+</ul>
+</div></section>
+
+<section><div class="wrap">
+<p class="quote">Il modo più economico di usare Claude è sapere già cosa chiedergli. <span>Pensare non consuma crediti</span></p>
+<div class="btns" style="justify-content:center;margin-top:24px"><a class="btn" href="https://cervello.unlikeacademy.it/?utm_source=aigratis&amp;utm_medium=crediti&amp;utm_campaign=claude" target="_blank" rel="noopener">Parti da CERVELLO</a><a class="btn btn-chiaro" href="prepara-claude.html">Prepara il tuo progetto</a></div>
+<p class="note" style="margin-top:26px">Fonte: guida ufficiale di Anthropic sui limiti di utilizzo (<a href="https://support.claude.com/en/articles/9797557-usage-limit-best-practices" target="_blank" rel="noopener">support.claude.com</a>). Come vengono calcolati i limiti lo decide Anthropic e può cambiare: guarda sempre il tuo contatore in Impostazioni → Usage</p>
+</div></section>
+
+<section><div class="wrap"><div class="systembox">
+<span class="eyebrow">Il passo successivo</span>
+<h2>Meno spreco, <em>più strategia</em></h2>
+<p>I crediti durano di più quando sai cosa chiedere. In Unlike Academy partiamo dalla strategia, e lo strumento viene dopo. Entra gratis nel Club: trovi il corso gratuito, le news e persone che ti rispondono</p>
+<div class="btns"><a class="btn" href="index.html">Tutte le risorse</a><a class="btn btn-chiaro" href="https://entra.unlikeacademy.it/?utm_source=aigratis&amp;utm_medium=chiusura&amp;utm_campaign=claude">Entra gratis nel Club</a></div>
+</div></div></section>
+
+<section id="stratego" style="padding-top:0"><div class="wrap">
+  <div class="stbanner">
+    <div>
+      <span class="eyebrow" style="background:#CD2471">In arrivo a novembre</span>
+      <img class="wm" src="assets/stratego/stratego-wordmark-bianco.png" alt="Stratego" width="800" height="179">
+      <p>I prompt funzionano se le domande giuste le sai già. <b>Stratego</b> è la piattaforma di Unlike che ti crea la strategia social e il piano editoriale: le domande te le fa lei, con il nostro metodo davanti</p>
+      <a class="btn" href="https://stratego.social/?utm_source=aigratis&amp;utm_medium=banner-pagine&amp;utm_campaign=claude" target="_blank" rel="noopener">Mettiti in lista d'attesa <span>&rarr;</span></a>
+    </div>
+    <img class="mago" src="assets/stratego/mascotte.png" alt="" width="390" height="420">
+  </div>
+  <p class="backlib"><a href="index.html">&larr; Torna a tutte le risorse gratuite</a></p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p>Una risorsa di <a href="https://entra.unlikeacademy.it/?utm_source=aigratis&amp;utm_medium=footer&amp;utm_campaign=claude">Unlike Academy</a> · usa l'AI senza sembrare AI</p>
+  <p class="marchi">Claude è un marchio di Anthropic, mostrato solo per indicare lo strumento: nessuna approvazione o partnership</p><p>© 2026 Unlike</p>
+</div></footer>
+
+<script>
+document.querySelectorAll('.copy-btn').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();
+  var p=document.getElementById(b.dataset.target);if(!p)return;var t=p.innerText;
+  var ok=function(){var o=b.textContent;b.textContent='Copiato ✓';b.classList.add('done');setTimeout(function(){b.textContent=o;b.classList.remove('done')},1800)};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok).catch(function(){fb(t,ok)})}else{fb(t,ok)}
+})});
+function fb(t,c){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a);c()}
+</script>
+
+</body>
+</html>
